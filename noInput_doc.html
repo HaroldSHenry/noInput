@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+  
+</head>
+<body>
+<h1>noInput</h1>
+<p><strong>noInput</strong> is a jQuery plugin for hiding and re-showing inline label text like &quot;<strong>(don't know)</strong>&quot; within an empty HTML <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> element to give significance to a blank field.</p>
+<h2>Usage</h2>
+<p>You may sometimes want to indicate what leaving an <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> element blank indicates. The jQuery <strong>noInput</strong> plugin places text that you specify within the element and then hides it when the element gets focus and when it has content. The result is an inline label like this:</p>
+<div style="position:relative; margin:12px 0 12px 32px;">
+  <label for="fn">The 6th president of the U.S.:</label>
+  <label class="iLbl" for="fn" id="fnL" style="position:absolute;margin:1px 0 0 8px;padding:0;line-height:20px;font-weight:400;font-size:14px;color:#888;"></label>
+  <input id="fn" name="fn" />
+</div>
+<h3>Usage</h3>
+<ol>
+<li>
+<p>You can find supporting CSS in <strong>jquery-noInput.css</strong> that styles the <code>label.iLbl</code> class as an example. You will doubtless want to adjust it for the label class or classes you will use, and incorporate the results into your own CSS file:</p>
+<pre><code>label.iLbl
+{
+  position:absolute;
+  margin:2px 0 0 8px;
+  padding:0;
+  line-height:20px;
+  font-weight:400;
+  font-size:14px;
+  color:#888;
+}
+</code></pre>
+
+</li>
+<li>
+<p>In the <code>&lt;body&gt;</code> of your HTML page,  wherever you want an <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> element with an inline label like &quot;(don't know)&quot;, enclose the element and associated label in a <code>&lt;div&gt;</code> that has the CSS style <code>position: relative;</code>.</p>
+</li>
+<li>
+<p>You can apply a normal label to the input element, but in addition to that, add an <strong>empty</strong> <code>&lt;label&gt;</code> element with:</p>
+<ul>
+<li><code>class</code> equal to a class like <code>&quot;iLbl&quot;</code> that you style for the purpose, with the CSS <code>position:absolute;</code>.</li>
+<li><code>for</code> equal to the <code>id</code> of the input element in which it will appear</li>
+<li><code>id</code> equal to the <code>id</code> of that input element with the letter 'L' appended to the end</li>
+<li><code>left</code> in some cases set to a value that places the inline label at the desired horizontal position</li>
+</ul>
+<p>For example:</p>
+<pre><code>&lt;div style=&quot;position:relative&quot;&gt;
+  &lt;label for=&quot;Lkn&quot;&gt;The last king of Norway:&lt;/label&gt;
+  &lt;label class=&quot;iLbl&quot; for=&quot;Lkn&quot; id=&quot;LknL&quot;&gt;&lt;/label&gt;
+  &lt;input id=&quot;Lkn&quot; name=&quot;Lkn&quot; /&gt;
+&lt;/div&gt;
+</code></pre>
+
+</li>
+<li>
+<p>At the end of the HTML body, you can include the <strong>jquery-noInput.min.js</strong> Javascript file:</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;./js/jquery-noInput.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Of course, since it's a simple script, you'll probably prefer to consolidate it into a <strong>.js</strong> file of your own, instead.</p>
+</li>
+<li>
+<p>Finally, use jQuery to apply <code>noInput</code> to every label of class <code>.iLbl</code> and pass it the &quot;(don't know)&quot; text that you want to appear when there is no content in the input element:</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;$(&quot;.iLbl&quot;).noInput( &quot;(don't know)&quot; );&lt;/script&gt;
+</code></pre>
+
+</li>
+</ol>
+<p>The result is an <code>&lt;input&gt;</code> control that looks like this:</p>
+<div style="position:relative; margin:12px 0 12px 32px;">
+  <label for="kn">The last king of Norway:</label>
+  <label class="iLbl" for="kn" id="knL" style="position:absolute;margin:1px 0 0 8px;padding:0;line-height:20px;font-weight:400;font-size:14px;color:#888;"></label>
+  <input id="kn" name="kn" />
+</div>
+<h2>Feedback?</h2>
+<p>I suspect there may be better ways to accomplish some of what I'm doing here, and I'd much appreciate any help, corrections or suggestions!</p>
+<p><script type="text/javascript" src="./js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery-noInput.js"></script></p>
+<script>
+ $(".iLbl").noInput( "(don't know)" );
+</script>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
