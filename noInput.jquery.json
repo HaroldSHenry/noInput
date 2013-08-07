@@ -2,7 +2,7 @@
   "name": "noInput",
   "version": "0.1.0",
   "title": "jQuery noInput",
-  "description": "A jQuery plugin for hiding and re-showing inline label text within an empty HTML input or  textarea element to describe what leaving the field blank signifies.",
+  "description": "A jQuery plugin for displaying inline labels similar to HTML 5's placeholders, that lets you style the placeholder text.",
   "keywords": [
     "inline",
     "input",
@@ -25,6 +25,6 @@
   "bugs": "https://github.com/HaroldSHenry/jquery-noInput/issues",
   "homepage": "https://github.com/HaroldSHenry/noInput",
 	"download": "https://github.com/HaroldSHenry/noInput/archive/master.zip",
-  "docs": "http://www.talerian.com/noInput_doc.html",
-  "demo": "http://www.talerian.com/noInput_doc.html"
+  "docs": "http://www.talerian.com/noInput.html",
+  "demo": "http://www.talerian.com/noInput.html"
 }

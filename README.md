@@ -1,30 +1,26 @@
 # noInput
 
-**noInput** is a jQuery plugin for hiding and re-showing inline label text like "**(don't know)**" within an empty HTML `<input>` or `<textarea>` element to give significance to a blank field.
+**noInput** is a jQuery plugin for displaying inline labels similar to HTML 5's placeholders, and that lets you style the placeholder text.
 
 ## Usage
-You may sometimes want to indicate what leaving an `<input>` or `<textarea>` element blank indicates. The jQuery **noInput** plugin places text that you specify within the element and then hides it when the element gets focus and when it has content. The result is an inline label like this:
+You may sometimes want to indicate what leaving an `<input>` or `<textarea>` element blank indicates. The HTML 5 *placeholder* attribute does this, but doesn't let you style placeholder text. The jQuery **noInput** plugin places a label that you specify within the element and then hides it when the element gets focus and when it has content. The result looks like the "(don't know)" below:
 
-<div style="position:relative; margin:12px 0 12px 32px;">
-  <label for="fn">The 6th president of the U.S.:</label>
-  <label class="iLbl" for="fn" id="fnL" style="position:absolute;margin:1px 0 0 8px;padding:0;line-height:20px;font-weight:400;font-size:14px;color:#888;"></label>
-  <input id="fn" name="fn" />
-</div>
+>![Example 1](./art/pres.png)
 
 ### Usage
 
 1. You can find supporting CSS in **jquery-noInput.css** that styles the `label.iLbl` class as an example. You will doubtless want to adjust it for the label class or classes you will use, and incorporate the results into your own CSS file:
 
-		label.iLbl
-		{
+        label.iLbl
+        {
           position:absolute;
-		  margin:2px 0 0 8px;
-		  padding:0;
-		  line-height:20px;
-		  font-weight:400;
-		  font-size:14px;
-		  color:#888;
-		}
+          margin:2px 0 0 8px;
+          padding:0;
+          line-height:20px;
+          font-weight:400;
+          font-size:14px;
+          color:#888;
+        }
 
  
 2. In the `<body>` of your HTML page,  wherever you want an `<input>` or `<textarea>` element with an inline label like "(don't know)", enclose the element and associated label in a `<div>` that has the CSS style `position: relative;`.
@@ -55,24 +51,12 @@ You may sometimes want to indicate what leaving an `<input>` or `<textarea>` ele
 
 The result is an `<input>` control that looks like this:
 
-<div style="position:relative; margin:12px 0 12px 32px;">
-  <label for="kn">The last king of Norway:</label>
-  <label class="iLbl" for="kn" id="knL" style="position:absolute;margin:1px 0 0 8px;padding:0;line-height:20px;font-weight:400;font-size:14px;color:#888;"></label>
-  <input id="kn" name="kn" />
-</div>
+>![Example 2](./art/king.png)
 
 
 ## Feedback?
 
 I suspect there may be better ways to accomplish some of what I'm doing here, and I'd much appreciate any help, corrections or suggestions!
-
-<script type="text/javascript" src="./js/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="./js/jquery-noInput.js"></script>
-<script>
- $(".iLbl").noInput( "(don't know)" );
-</script>
-
-
 
 
 

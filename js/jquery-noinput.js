@@ -1,8 +1,6 @@
 /**
- * noInput:    A jQuery plugin for hiding and re-showing inline label text
- *             like "(don't know)" within an empty HTML <input> or 
- *             <textarea> element to describe what leaving the field
- *             blank signifies.
+ * noInput:    A jQuery plugin for displaying inline labels similar to HTML 5's
+ *             placeholders, that lets you style the placeholder text.
  * http://talerian.com/jQuery/noInput.html
  *
  * @name       noInput jQuery Plugin
